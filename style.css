@@ -1,10 +1,30 @@
 /* === RESET === */
-* {
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #1c1c22 0%, #2b2838 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+  
+  
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+  main {
+    min-height: calc(100vh - 80px); /* prend tout sauf la navbar */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
   
+    
   body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(180deg, #f8f7ff, #ede9ff);
@@ -78,7 +98,7 @@
   
   .hero-photo {
     width: 260px;
-    height: 260px; /* même valeur = forme parfaitement ronde */
+    height: 260px; 
     border-radius: 50%;
     overflow: hidden;
     border: 4px solid #7b6cff;
@@ -91,7 +111,7 @@
   .hero-photo img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* coupe proprement pour garder le visage centré */
+    object-fit: cover;
   }
   
   .hero-text {
@@ -262,6 +282,9 @@
   }
 
   @media (prefers-color-scheme: dark) {
+    html, body {
+        background: linear-gradient(180deg, #1c1c22 0%, #2b2838 100%);
+      }
     body {
       background: linear-gradient(180deg, #1c1c22, #2b2838);
       color: #e8e8f3;
@@ -332,3 +355,50 @@
     }
   }
     
+  /* === SCROLLBAR STYLING === */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #1c1b22; /* Couleur du fond de la barre */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #7b6cff, #a999ff);
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #a999ff, #7b6cff);
+  }
+  
+  /* Pour Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #7b6cff #1c1b22;
+  }
+
+  body::after {
+    content: "";
+    display: block;
+    height: 0;
+    background: inherit;
+  }
+
+  .projects {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .projects-grid {
+    margin-bottom: 0;
+    padding-bottom: 2rem; /* espace doux sans créer de bande */
+  }
+  
+  body {
+    overflow-x: hidden; /* évite tout débordement visuel horizontal */
+  }
+  
