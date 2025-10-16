@@ -70,7 +70,7 @@ html, body {
   }
   
   .nav-icons img {
-    width: 22px;
+    width: 30px;
     margin-left: 10px;
     transition: opacity 0.3s;
   }
@@ -228,17 +228,17 @@ html, body {
   }
   
   .project-card {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s, box-shadow 0.3s;
   }
-  
+
   .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   }
+
   
   .project-card img {
     width: 100%;
