@@ -1,90 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About - Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="assets/icons/favicon.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <!-- ===== NAVBAR ===== -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">VG</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="about.html" class="active">À propos</a></li>
-        <li><a href="projects.html">Projets</a></li>
-      </ul>
-      <div class="nav-icons">
-        <a href="https://github.com/VincentGallo113/" target="_blank"><img src="assets/icons/github.svg" alt="GitHub" /></a>
-        <a href="https://www.linkedin.com/in/vincent-gallo-353192313/" target="_blank"><img src="assets/icons/linkedin.svg" alt="LinkedIn" /></a>
-      </div>
-    </nav>
-  </header>
-
-  <!-- ===== ABOUT SECTION ===== -->
-  <main class="about">
-    <section class="about-intro">
-      <h1>À propos de moi</h1>
-      <p>Je m'appelle <strong>Vincent Gallo</strong> et je suis étudiant en <strong>Bachelier de transition en jeu vidéo</strong> à la HEPL. 
-      Passionné par la programmation, j'aime transformer des concepts en expériences interactives et immersives. 
-      J'apprends rapidement de nouveaux outils et je cherche toujours à repousser mes limites techniques et créatives.</p>
-    </section>
-
-    <!-- ===== SKILLS SECTION ===== -->
-    <section class="skills">
-      <h2>Compétences techniques</h2>
-      <div class="skills-grid">
-        <div class="skill-card">C#</div>
-        <div class="skill-card">Unity</div>
-        <div class="skill-card">Git</div>
-        <div class="skill-card">Java</div>
-        <div class="skill-card">HTML / CSS</div>
-        <div class="skill-card">PHP</div>
-        <div class="skill-card">Pascal Delphi</div>
-      </div>
-    </section>
-    <br>
-    <!-- ===== SOFT SKILLS SECTION ===== -->
-    <section class="soft-skills">
-      <h2>Soft Skills</h2>
-      <ul>
-        <li>Adaptabilité aux environnements de travail</li>
-        <li>Curiosité et veille technologique</li>
-        <li>Motivation et autonomie</li>
-        <li>Esprit d'équipe</li>
-      </ul>
-    </section>
-    <br>
-    <!-- ===== EDUCATION TIMELINE ===== -->
-    <section class="education">
-      <h2>Parcours académique</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-date">2017 - 2023</div>
-          <div class="timeline-content">
-            <h3>ECCSA - Certificat d'Enseignement Secondaire Supérieur</h3>
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Découvrez Vincent Gallo, son approche du développement web backend et ses compétences PHP et JavaScript."
+    />
+    <meta name="theme-color" content="#101411" />
+    <title>À propos · Vincent Gallo</title>
+    <link rel="icon" href="assets/icons/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Aller au contenu</a>
+    <header>
+      <nav class="wrap" aria-label="Navigation principale">
+        <a class="logo" href="index.html">vincent gallo<span>.</span> </a>
+        <div class="nav-links">
+          <a href="index.html">Accueil</a>
+          <a href="about.html" aria-current="page">À propos</a>
+          <a href="projects.html">Projets</a>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-date">2023 - 2024</div>
-          <div class="timeline-content">
-            <h3>HELMo - Bachelier en développement d'applications</h3>
+        <a class="nav-contact" href="#contact">Parlons de votre projet ↗</a>
+      </nav>
+    </header>
+    <main id="main">
+      <div class="wrap">
+        <section class="page-intro">
+          <span class="eyebrow">À propos</span>
+          <h1>Curieux par nature.<br />Développeur par passion.</h1>
+          <p>
+            Je suis Vincent Gallo. Mon identité de développeur se construit
+            aujourd’hui autour du web backend, avec PHP et JavaScript comme
+            outils principaux.
+          </p>
+        </section>
+        <section class="section about-grid">
+          <img
+            class="portrait"
+            src="assets/img/Vincent.png"
+            alt="Portrait de Vincent Gallo"
+          />
+          <div>
+            <h2>Une même envie :<br />comprendre et créer.</h2>
+            <p>
+              Mon parcours de programmation m’a amené à explorer le
+              développement d’applications et le jeu vidéo. Ces expériences
+              nourrissent mon intérêt pour la logique, les interactions et la
+              résolution de problèmes.
+            </p>
+            <p>
+              Je mets désormais le développement web au centre de mon portfolio
+              : des traitements PHP côté serveur aux interactions JavaScript
+              dans le navigateur.
+            </p>
+            <p>
+              Curiosité, autonomie, adaptabilité et esprit d’équipe accompagnent
+              ma manière d’apprendre et de travailler.
+            </p>
+            <a class="text-link" href="projects.html"
+              >Découvrir mes réalisations ↗</a
+            >
           </div>
+        </section>
+        <section class="section">
+          <span class="eyebrow">Compétences</span>
+          <h2>Ma boîte à outils.</h2>
+          <div class="skills">
+            <span>PHP</span>
+            <span>JavaScript</span>
+            <span>HTML / CSS</span>
+            <span>Git</span>
+            <span>C#</span>
+            <span>Java</span>
+            <span>Unity</span>
+          </div>
+          <p>
+            PHP et JavaScript au premier plan ; une culture de programmation
+            enrichie par mes expériences en C#, Java et Unity.
+          </p>
+        </section>
+      </div>
+      <section class="contact wrap" id="contact">
+        <span class="eyebrow">Et si on échangeait ?</span>
+        <h2>Un projet commence<br />par une conversation.</h2>
+        <p>
+          Envie de parler développement web, de découvrir mon travail ou de me
+          proposer une collaboration ? Retrouvons-nous sur LinkedIn.
+        </p>
+        <div class="actions">
+          <a
+            class="button"
+            href="https://www.linkedin.com/in/vincent-gallo-353192313/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Me contacter <span aria-hidden="true">↗</span>
+          </a>
+          <a
+            class="button secondary"
+            href="cv/Vincent_Gallo_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Consulter mon CV ↗</a
+          >
         </div>
-        <div class="timeline-item">
-          <div class="timeline-date">2024 - présent</div>
-          <div class="timeline-content">
-            <h3>HEPL - Bachelier de transition en jeu vidéo</h3>
-          </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap footer-inner">
+        <span>© Vincent Gallo · Développeur web backend</span>
+        <div class="footer-links">
+          <a
+            href="https://github.com/VincentGallo113"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub ↗</a
+          >
+          <a
+            href="https://www.linkedin.com/in/vincent-gallo-353192313/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn ↗</a
+          >
         </div>
       </div>
-    </section>
-  </main>
-
-</body>
+    </footer>
+  </body>
 </html>
